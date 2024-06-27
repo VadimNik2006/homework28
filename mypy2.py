@@ -41,16 +41,18 @@ class Date:
         return True
         # day = int(string[:2])
         # month = int(string[3:5])
-        # # year = string[6:]
-        # # if (month in [int('01'), int('03'), int('05'), int('07'), int('08'), 10, 12] and day == 31)\
-        # #         or (month in [int('04'), int('06'), int('09'), 11] and day == 30)\
-        # #         or (month == int('02') and day in [28, 29]):
-        # #     return True
-        # if (month in [1, 3, 5, 7, 8, 10, 12] and 0 < day <= 31)\
-        #         or (month in [4, 6, 9, 11] and 0 < day <= 30)\
-        #         or (month == 2 and day in [28, 29]):
-        #     return True
+        # year = int(string[6:])
+        # if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        #     if (month in [1, 3, 5, 7, 8, 10, 12] and 0 < day <= 31)\
+        #             or (month in [4, 6, 9, 11] and 0 < day <= 30)\
+        #             or (month == 2 and 0 < day <= 29):
+        #         return True
+        #     return False
         # else:
+        #     if (month in [1, 3, 5, 7, 8, 10, 12] and 0 < day <= 31) \
+        #             or (month in [4, 6, 9, 11] and 0 < day <= 30) \
+        #             or (month == 2 and 0 < day <= 28):
+        #         return True
         #     return False
 
 
